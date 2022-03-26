@@ -50,7 +50,7 @@
  #imagenInicio{
     width:400px;
     height:300px;
-    top: 200px;
+    top: 100px;
  }
 
  .section__articulo3{
@@ -65,17 +65,20 @@
      list-style-type: none;   
  }
 
- a{
+  .a{
     text-decoration: none;
-    color: rgb(240, 233, 229);    
+    color: rgb(240, 233, 229)!important;    
     display: inline-block;
  }
 
+ 
  a:hover{
     color:black;
     border-style: double;
  
  }
+
+ 
 
   .menu__link{
     display: inline-block;
@@ -90,7 +93,7 @@
      font-size: 1.5em;
   }
 
-  nav{ 
+  .navbar{ 
    width: 100%;   
    background: #FF5F6D;  /* fallback for old browsers */
    background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D);  /* Chrome 10-25, Safari 5.1-6 */
@@ -103,7 +106,7 @@
  
  .section__articulo1{     
    grid-area: articulos;
-   margin-left: 50px;
+   /*margin-left: 50px;*/
    border-style: ridge;
    border-radius: 10px;
    margin-top: 2rem;
@@ -163,8 +166,8 @@ body{
 .logo{
   height:15%;
   width: 10%;
-  padding-bottom: 0%;
-  padding-top: 20%;
+  padding-bottom: 10%;
+  padding-top: 10%;
   padding-right: 10px;    
 }
 
@@ -172,7 +175,7 @@ body{
    display: inline-block;
    padding-bottom: 20%;
    padding-left: 0%;
-   padding-top: 0px;
+   padding-top: 100px;
  
    font-family: 'Dancing Script', cursive;
    font-size: 3em;
@@ -180,7 +183,7 @@ body{
 }
 
 .section__articulo1:hover{
-   border-width: 5px;
+   border-width: 5px; 
 }
 
 .section__articulo2:hover{
@@ -240,6 +243,9 @@ h4{
    "footer footer footer";
    grid-template-columns: 35% 35% 30%;
    grid-template-rows: 100px auto 100% 100px; 
+   padding-left: 0%;
+   padding-right: 0%;
+   margin: 0px;
 }
 
 .encabezado{
@@ -272,13 +278,13 @@ h4{
 
  html{
     font-size: 62.5%;
-    max-width: 1080;
+   /* max-width: 1080;*/   
  }
 
- .container{
+ /*.container{
     width: 100%;
     margin: 0 auto;
- }
+ }*/
 
  main{
     height: 100%;
@@ -308,7 +314,7 @@ h4{
       }
       
       .redesSociales {
-         font-size: 1em;  
+         font-size: 1.2em;  
          padding-left: 0%;    
       }
       
@@ -318,7 +324,7 @@ h4{
       }
 
       .navbar .menu{
-         font-size: 1.1em;
+         font-size: 3em;
          justify-content: flex-start;
          margin-inline-start: 0%;
          padding-left: 0%;
