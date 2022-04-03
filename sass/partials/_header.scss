@@ -1,0 +1,122 @@
+ .encabezado{
+
+    display: flex;   
+    grid-area: header;
+    width: 100%;
+    height: 100%;
+    
+    background: #FF5F6D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+    justify-content: space-between;   
+    align-items: center;
+
+    .logo{
+        height:15%;
+        width: 10%;
+        padding-bottom: 10%;
+        padding-top: 10%;
+        padding-right: 10px;    
+      }
+
+      .tituloEncabezado{    
+        display: inline-block;
+        padding-bottom: 20%;
+        padding-left: 0%;
+        padding-top: 100px;
+      
+        font-family: 'Dancing Script', cursive;
+        font-size: 3em;
+        background: none;  /* fallback for old browsers */
+     }
+
+     .redesSociales{
+        font-size: 2em;   
+     }
+
+     h1{
+        color: rgb(231, 226, 226);
+        background-color: brown;
+        font-size: 4em;
+        font-family: 'Trebuchet MS';
+        text-align: center;
+        margin-top: 0;
+        height: 100;
+        margin-left: 0px;
+    }
+}
+
+.navbar{
+    display: flex;
+    grid-area: nav;
+    height:100%;
+    width: 100%;
+    flex-basis: 50%;
+    flex-wrap: wrap;
+ 
+    background: #ff4b1f;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff9068, #ff4b1f);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff9068, #ff4b1f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ }
+
+ul.menu{
+    list-style-type: none;   
+}
+
+ .a{
+   text-decoration: none;
+   color: rgb(240, 233, 229)!important;    
+   display: inline-block;
+
+   &:hover{
+    color:black;
+    border-style: double;
+ }
+}
+
+
+ .menu__link{
+   display: inline-block;
+   padding-left: 2%;
+  }
+
+ .navbar .menu{
+    padding-top: 10px;
+    padding-left: 10%;
+    padding-bottom: 10px;
+    width: 100%;   
+    font-size: 1.5em;
+ }
+ 
+ @media screen and (max-width: 768px){
+    .navbar{
+       font-size: .8em;
+       margin-left: 0%;
+    }
+
+    .logoTitulo{
+       font-size: .8em;
+    }
+    
+    .redesSociales {
+       font-size: 1.2em;  
+       padding-left: 0%;    
+    }
+    
+    .navbar .menu .menu__link{
+       font-size: 1em;
+       padding-left: 1%;
+    }
+
+    .navbar .menu{
+       font-size: 3em;
+       justify-content: flex-start;
+       margin-inline-start: 0%;
+       padding-left: 0%;
+    }
+
+    .navbar .menu .menu__link{
+       column-gap: 10%;
+    }
+}

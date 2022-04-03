@@ -1,0 +1,34 @@
+ .articulos{ 
+   &__articulo1:hover{
+        border-width: 5px;
+    }
+
+    &__articulo2:hover{
+    border-width: 5px;
+    }
+
+    &__articulo3:hover{
+    border-width: 5px;
+    }
+} 
+
+.tituloEncabezado {    
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+
+    transform: rotate3d();
+
+    @keyframes aparecer {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+     }
+}
+
+.logo{
+    transform: scale(1,1);
+  }
