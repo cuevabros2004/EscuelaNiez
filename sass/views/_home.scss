@@ -13,10 +13,9 @@
  }
 
 .articulos{
-    display:  flex;
+    @include flex(flex, row, left, left, 0, wrap);
     grid-area: articulos;
     width: 100%;
-    flex-wrap: wrap;
 
     #imagenInicio{
         width:400px;
@@ -30,54 +29,42 @@
      }
 
      .textoCards{
-        background-color: rgb(236, 218, 196);
+        background-color: map-get($colors, texto-cards);
         text-align: center;
         font-family: 'Assistant', sans-serif;
         width: 400px;
      }
-   
-   
+ 
       &__articulo1{     
-      grid-area: articulos;
-      
-      border-style: ridge;
-      border-radius: 10px;
-      margin-top: 2rem;
-      height: max-content;
-      width: max-content;
+         grid-area: articulos;      
+         border-style: ridge;
+         border-radius: 10px;
+         margin-top: 2rem;
+         height: max-content;
+         width: max-content;
       }
 
       &__articulo2{    
-      grid-area: articulos;   
-      margin-left: 30px;  
-      margin-top: 2rem;
-      border-style: ridge;
-      border-radius: 10px;
-      height: max-content;
-      width: max-content; 
-      top:200px;
-      left: 800px;
+         @extend .articulos__articulo1;
+         margin-left: 30px;  
+         top:200px;
+         left: 800px;
       }
 
       &__articulo3{ 
-      grid-area: articulos;
-      margin-left: 30px;
-      margin-top: 2rem;
-      border-style: ridge;
-      border-radius: 10px;
-      height: max-content;
-      width: max-content;
-      top:200px;
-      left: 900px;
+         @extend .articulos__articulo1;
+         margin-left: 30px;
+         top:200px;
+         left: 900px;
       }  
 
  }
 
- h2{
-    color: brown;
-    font-size: 2em;
-    font-family: 'Trebuchet MS';
-}
+      h2{
+         color: map-get($colors, titulos); 
+         font-size: 2em;
+         font-family: 'Trebuchet MS';
+      }
 
 @media screen and (max-width: 768px){
    

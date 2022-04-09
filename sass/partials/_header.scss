@@ -5,10 +5,10 @@
     width: 100%;
     height: 100%;
     
-    background: #FF5F6D;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+    background: map-get($colors, fondo-gradiente-fuerte);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, map-get($colors, fondo-gradiente-suave), map-get($colors, fondo-gradiente-fuerte));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, map-get($colors, fondo-gradiente-suave), map-get($colors, fondo-gradiente-fuerte)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
     justify-content: space-between;   
     align-items: center;
 
@@ -36,8 +36,8 @@
      }
 
      h1{
-        color: rgb(231, 226, 226);
-        background-color: brown;
+        color: map-get($colors, texto-encabezado);
+        background-color:map-get($colors, fondo-encabezado);
         font-size: 4em;
         font-family: 'Trebuchet MS';
         text-align: center;
@@ -55,9 +55,9 @@
     flex-basis: 50%;
     flex-wrap: wrap;
  
-    background: #ff4b1f;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ff9068, #ff4b1f);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ff9068, #ff4b1f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background:  map-get($colors, fondo-gradiente-nav-fuerte);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right,  map-get($colors, fondo-gradiente-nav-suave),  map-get($colors, fondo-gradiente-nav-fuerte));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right,  map-get($colors, fondo-gradiente-nav-suave),  map-get($colors, fondo-gradiente-nav-fuerte)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
  }
 
 ul.menu{
@@ -66,11 +66,11 @@ ul.menu{
 
  .a{
    text-decoration: none;
-   color: rgb(240, 233, 229)!important;    
+   color: map-get($colors, texto-links);    
    display: inline-block;
 
    &:hover{
-    color:black;
+    color:map-get($colors, hover);
     border-style: double;
  }
 }

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200&family=Dancing+Script&display=swap" rel="stylesheet');
-.articulos__articulo1:hover {
+.articulos__articulo1:hover, .articulos__articulo2:hover, .articulos__articulo3:hover {
   border-width: 5px; }
 
 .articulos__articulo2:hover {
@@ -43,9 +43,9 @@ body {
 footer {
   background: #FF5F6D;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D);
+  background: -webkit-linear-gradient(to right, #ff9068, #FF5F6D);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #FFC371, #FF5F6D);
+  background: linear-gradient(to right, #ff9068, #FF5F6D);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   font-size: 1.5rem;
   font-family: 'Trebuchet MS';
@@ -68,9 +68,9 @@ footer {
   height: 100%;
   background: #FF5F6D;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D);
+  background: -webkit-linear-gradient(to right, #ff9068, #FF5F6D);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #FFC371, #FF5F6D);
+  background: linear-gradient(to right, #ff9068, #FF5F6D);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   justify-content: space-between;
   align-items: center; }
@@ -120,7 +120,7 @@ ul.menu {
 
 .a {
   text-decoration: none;
-  color: #f0e9e5 !important;
+  color: #f0e9e5;
   display: inline-block; }
   .a:hover {
     color: black;
@@ -188,9 +188,13 @@ ul.menu {
 
 .articulos {
   display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: left;
+  gap: 0;
+  flex-wrap: wrap;
   grid-area: articulos;
-  width: 100%;
-  flex-wrap: wrap; }
+  width: 100%; }
   .articulos #imagenInicio {
     width: 400px;
     height: 300px;
@@ -203,7 +207,7 @@ ul.menu {
     text-align: center;
     font-family: 'Assistant', sans-serif;
     width: 400px; }
-  .articulos__articulo1 {
+  .articulos__articulo1, .articulos__articulo2, .articulos__articulo3 {
     grid-area: articulos;
     border-style: ridge;
     border-radius: 10px;
@@ -211,23 +215,11 @@ ul.menu {
     height: max-content;
     width: max-content; }
   .articulos__articulo2 {
-    grid-area: articulos;
     margin-left: 30px;
-    margin-top: 2rem;
-    border-style: ridge;
-    border-radius: 10px;
-    height: max-content;
-    width: max-content;
     top: 200px;
     left: 800px; }
   .articulos__articulo3 {
-    grid-area: articulos;
     margin-left: 30px;
-    margin-top: 2rem;
-    border-style: ridge;
-    border-radius: 10px;
-    height: max-content;
-    width: max-content;
     top: 200px;
     left: 900px; }
 
