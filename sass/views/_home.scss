@@ -16,6 +16,7 @@
     @include flex(flex, row, left, left, 0, wrap);
     grid-area: articulos;
     width: 100%;
+    border-color: map-get($colors, texto-cards);
 
     #imagenInicio{
         width:400px;
@@ -29,10 +30,11 @@
      }
 
      .textoCards{
-        background-color: map-get($colors, texto-cards);
+        background-color: map-get($colors, encabezado-cards);
+        color:map-get($colors, texto-cards );
         text-align: center;
         font-family: 'Assistant', sans-serif;
-        width: 400px;
+        width: 400px;                
      }
  
       &__articulo1{     
@@ -42,13 +44,14 @@
          margin-top: 2rem;
          height: max-content;
          width: max-content;
+         border-color: map-get($colors, borde-cards);
       }
 
       &__articulo2{    
          @extend .articulos__articulo1;
          margin-left: 30px;  
          top:200px;
-         left: 800px;
+         left: 800px;         
       }
 
       &__articulo3{ 

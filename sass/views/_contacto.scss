@@ -12,6 +12,22 @@
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
  }  
 
+ .boton{
+    border-style: outset;
+    border-color: map-get($colors , encabezado-cards );
+    font-size: 1.2em;
+    color: map-get($colors, subtitulos);
+    
+ }
+
+ .form-label{
+    font-size: 1.2em;
+ }
+
+ .form-control{
+   font-size: 1.2em;
+ }
+
  @media screen and (max-width: 768px){
    
 
